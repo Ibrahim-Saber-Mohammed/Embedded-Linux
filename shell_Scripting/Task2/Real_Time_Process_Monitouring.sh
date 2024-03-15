@@ -100,7 +100,7 @@ function Interactive_Mode() {
     done
 }
 function Alert_Thresholds () {
-    echo "$1" # arguments are accessible through $1, $2,...
+  
 }
 
 Interactive_Mode
