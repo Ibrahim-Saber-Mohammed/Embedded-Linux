@@ -6,6 +6,12 @@
 
 namespace Lib
 {
+    /// @brief Function overloading of the min template Function to get the min of No parameters are passed
+    /// @return [int] 0
+    int min()
+    {
+        return 0;
+    }
     /**
      * @brief template overloading of the min template Function to get the min of only one parameter is passed
      * 
@@ -49,6 +55,14 @@ namespace Lib
         {
             return ((Arg1<Arg2) ? Arg1 : Arg2);
         }
+    }
+    /**
+     * @brief Function overloading of the min template Function to get the max of No parameters are passed
+     * @return [int] 0
+     */
+    int max()
+    {
+        return 0;
     }
     /**
      * @brief template overloading of the max template Function to get the max of only one parameter is passed

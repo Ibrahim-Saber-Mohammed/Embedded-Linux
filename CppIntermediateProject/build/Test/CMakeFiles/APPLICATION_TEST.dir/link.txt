@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/APPLICATION_TEST.dir/CustomMathTest.cpp.o -o APPLICATION_TEST  /usr/local/lib/libgtest.a /usr/local/lib/libgtest_main.a /usr/local/lib/libgtest.a 

@@ -1,0 +1,66 @@
+@startuml maxFlowChart
+start
+note left
+    -[x] What happens if the datatypes are not arithmatic
+    -[X] The base case is that the min Function takes two arguments
+    -[x] Which Method we use(__Tail Recursion__ OR __Folding Expression__)
+end note
+
+note right
+    -[x] What happens if the user Passed only One Argument
+    -[X] Use Function Overloading
+end note
+split
+start
+note left
+    -[x] main Template method
+end note
+if (is_arithmetic_v(T) && is_arithmetic_v(U)?)  then (Yes)
+    if (sizeof Va_list > 0) then (Yes)
+    note left
+    -[x] Means we have more than two aruments
+    -[x] Implement __Tail Recursion__
+    end note
+    :declare TemResult;
+        if (Arg1 > Arg2 ? ) then (Yes)
+            :TemResult = Arg1;
+        else (No)
+            :TemResult =  Arg2;
+        endif
+        :return max(TemResult, Va_list ...);
+        note
+        -[x] Recurssive Call of the max Function
+        end note
+        detach
+    else (No)
+        note right
+        -[x] Means we have only two aruments
+        -[x] Return the Maximum between the Two arguments
+        end note
+        if (Arg1 > Arg2 ? ) then (Yes)
+            :Maximum Value = Arg1;
+        else (No)
+            :Maximum Value =  Arg2;
+        endif
+        :return Maximum Value;
+        stop
+    endif
+else(No)
+    :Abort Compilation;
+    stop
+endif
+split again
+start
+note right
+  -[x] max(T)
+  ====
+  -[x] Function Overloading with One Argument
+end note
+if (is_arithmetic_v(T) ) then (Yes)
+:   return Arg;
+else (No)
+    :Abort Compilation;
+endif
+stop
+end split
+@enduml

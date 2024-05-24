@@ -1,3 +1,0 @@
-/home/ibrahim/Desktop/Cpp/IntermediateLevelPr/Build/CMakeFiles/application.dir
-/home/ibrahim/Desktop/Cpp/IntermediateLevelPr/Build/CMakeFiles/edit_cache.dir
-/home/ibrahim/Desktop/Cpp/IntermediateLevelPr/Build/CMakeFiles/rebuild_cache.dir
